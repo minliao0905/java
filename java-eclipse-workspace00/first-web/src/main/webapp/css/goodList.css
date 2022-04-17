@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.nav-left{
+	float:left;
+	background-color:#183e5f;
+	color:#023440;
+	text-align:center;
+	width:250px;
+	height:2500px;
+}
+.nav-left ul {
+	list-style:none;
+	line-height:30px;
+	text-align:center;
+	height:2500px;
+}
+.nav-left ul li:hover{
+	background-color:rgb(158, 162, 165);
+	list-style:none;
+	text-decoration:none;
+	line-height:90px;
+	margin-top:-16px;
+	text-align:center;
+}
+.nav-left ul li{
+	background-color:#8f98b3;
+	list-style:none;
+	text-decoration:none;
+	line-height:90px;
+	margin-top:-16px;
+	text-align:center;
+}
+.nav-right{
+	float:left;
+	color:#023440;
+	width:80%;
+	margin-left:25px;
+}
+.nav-right .goods-title{
+	float:left;
+	width:100%;
+	text-align:center;
+	
+}
+.nav-right .goods-item{
+	width:125px;
+	height:170px;
+	overflow:hidden;
+	display:block;
+	float:inherit;
+	border:1px solid #eeeeee;
+	margin:2px;
+	padding-left:3px;
+	text-align:center;
+}

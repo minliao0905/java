@@ -1,0 +1,7 @@
+127.0.0.1 - - [26/Apr/2021:19:46:45 +0800] "GET / HTTP/1.1" 404 697
+0:0:0:0:0:0:0:1 - - [26/Apr/2021:19:46:46 +0800] "GET /first-web/index.jsp HTTP/1.1" 200 345
+0:0:0:0:0:0:0:1 - - [26/Apr/2021:19:46:46 +0800] "GET /first-web/userInfo.jsp HTTP/1.1" 404 702
+0:0:0:0:0:0:0:1 - - [26/Apr/2021:19:47:59 +0800] "GET /first-web/User.jsp HTTP/1.1" 500 1750
+0:0:0:0:0:0:0:1 - - [26/Apr/2021:19:50:03 +0800] "GET /first-web/WEB-INF/user/userInfo.jsp HTTP/1.1" 404 649
+127.0.0.1 - - [26/Apr/2021:20:03:48 +0800] "GET / HTTP/1.1" 404 697
+0:0:0:0:0:0:0:1 - - [26/Apr/2021:20:03:49 +0800] "GET /first-web/WEB-INF/user/userInfo.jsp HTTP/1.1" 404 649

@@ -1,0 +1,68 @@
+1623032475000	Move 'mycontrol' to 'lib'
+1623032483231	Move 'mycontrol' to 'WEB-INF'
+1623033026392	Encapsulate field 'shopsId'
+1623033665133	Rename resource 'register.jsp'
+1623070458261	Rename resource 'register.jsp'
+1623073197247	Rename resource 'shops.java'
+1623073620061	Delete element
+1623073629654	Delete element
+1623074737075	Move 'register02.jsp' to 'webapp'
+1623074759132	Move 'register01.jsp' to 'webapp'
+1623074791849	Move 'register02.jsp' to 'mycontrol'
+1623113314601	Move 'js' to 'WEB-INF'
+1623113348640	Move 'js' to 'user'
+1623113356392	Delete element
+1623113394149	Rename resource 'mian.js'
+1623113539582	Delete element
+1623113825099	Move 'main.js' to 'js'
+1623113827394	Move 'swiper.min.js' to 'js'
+1623113916417	Move 'register01.jsp' to 'shops'
+1623113919923	Move 'main.jsp' to 'webapp'
+1623114263745	Move 'css' to 'webapp'
+1623114388925	Move 'imgs' to 'webapp'
+1623137595756	Move 'main.jsp' to 'pages'
+1623137628005	Move 'css' to 'js'
+1623137636734	Move 'css' to 'pages'
+1623137646866	Move 'imgs' to 'pages'
+1623137665406	Move 'js' to 'pages'
+1623137694587	Delete element
+1623137708091	Delete element
+1623137932933	Move 'main.css' to 'pages'
+1623138012377	Move 'main.css' to 'css'
+1623138924746	Delete element
+1623139010217	Move 'main.jsp' to 'webapp'
+1623139044115	Copy folder
+1623139050331	Delete element
+1623139069401	Move 'css' to 'css'
+1623139076112	Move 'css' to 'webapp'
+1623139085205	Move 'js' to 'css'
+1623139089923	Move 'imgs' to 'css'
+1623139092785	Move 'imgs' to 'webapp'
+1623139094279	Move 'js' to 'webapp'
+1623139398765	Delete element
+1623140146584	Move 'main.jsp' to 'pages'
+1623140428531	Move 'main.jsp' to 'webapp'
+1623141163228	Move 'shoppingCart.jsp' to 'user'
+1623141180146	Copy file
+1623141223397	Move 'shoppingCart.js' to 'imgs'
+1623141228773	Move 'shoppingCart.js' to 'js'
+1623141237271	Move file
+1623141285907	Delete element
+1623141305092	Delete element
+1623141315679	Delete element
+1623141379131	Move 'main.jsp' to 'webapp'
+1623141630288	Delete element
+1623144587425	Delete element
+1623159710409	Delete element
+1623221118071	Move 'goodsList.jsp' to 'webapp'
+1623222389535	Delete element
+1623249687762	Move 'goodsList.jsp' to 'pages'
+1623249707497	Move 'goodsList.jsp' to 'webapp'
+1623249713921	Move 'gooddInfo.jsp' to 'webapp'
+1623250621679	Delete element
+1623250637370	Rename resource 'minn.js'
+1623287479202	Rename resource 'gooddInfo.jsp'
+1623372035180	Rename resource 'myAddress.jsp'
+1623373195488	Rename resource 'usercart.java'
+1623373311266	Rename resource 'myOrder.java'
+1623486676511	Rename resource 'goodslist.jsp'

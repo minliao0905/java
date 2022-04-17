@@ -1,0 +1,6 @@
+127.0.0.1 - - [28/Apr/2021:21:44:05 +0800] "GET / HTTP/1.1" 404 700
+0:0:0:0:0:0:0:1 - - [28/Apr/2021:21:44:05 +0800] "GET /first-web/WEB-INF/classes/com/educoder/dao/Impl/BaseDao.java HTTP/1.1" 404 648
+0:0:0:0:0:0:0:1 - - [28/Apr/2021:21:44:06 +0800] "GET /favicon.ico HTTP/1.1" 404 711
+0:0:0:0:0:0:0:1 - - [28/Apr/2021:21:44:26 +0800] "GET /first-web/index.jsp HTTP/1.1" 200 370
+0:0:0:0:0:0:0:1 - - [28/Apr/2021:21:44:27 +0800] "GET /first-web/userInfo HTTP/1.1" 404 722
+0:0:0:0:0:0:0:1 - - [28/Apr/2021:21:44:40 +0800] "GET /first-web/userInfo.jsp HTTP/1.1" 500 6731

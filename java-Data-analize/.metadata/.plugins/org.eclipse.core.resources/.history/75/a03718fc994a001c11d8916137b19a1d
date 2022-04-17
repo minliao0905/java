@@ -1,0 +1,49 @@
+package com.hyr.kmeans;
+
+import au.com.bytecode.opencsv.CSVReader;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
+public class KmeansMain {
+
+    public static void main(String[] args) throws IOException {
+        // 读取数据源文件
+        CSVReader reader = new CSVReader(new FileReader("src/main/resources/data.csv")); // 数据源
+        FileWriter writer = new FileWriter("src/main/resources/out.csv");
+        List<String[]> myEntries = reader.readAll(); 
+        List<Cluster> allcluster = new ArrayList<Cluster>();
+        // 转换数据点集
+        List<Point> points = new ArrayList<Point>(); // 数据点集
+        for (String[] entry : myEntries) {
+            points.add(new Point(Float.parseFloat(entry[0]), Float.parseFloat(entry[1])));
+        }
+
+        int k = 4; // K值
+        int type = 1;
+        KmeansModel model = Kmeans.run(points, k, type);
+
+        System.out.println(" K is " + model.getK() + " ,  Object Funcion Value is " + model.getOfv() + " ,  calc_distance_type is " + model.getCalc_distance_type() + "   ====================\n");
+        int i = 0;
+        for (Cluster cluster : model.getClusters()) {
+        	allcluster.add(cluster);
+            i++;
+            System.out.println("====================   classification " + i + "   ====================");
+            for (Point point : cluster.getPoints()) {
+            	System.out.println(point.toString());
+            }
+            System.out.println("centroid is " + cluster.getCentroid().toString());
+            System.out.println("\n\n");
+        }
+        MakeDraw draw= new MakeDraw("1",allcluster);
+        System.out.close();
+
+    }
+
+}

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.main-page{	
+	margin-left:10px;
+	margin-top:10px;
+}
+.main-page .head{
+	background-color:#ffffff;
+	font-size:32px;
+	width:100%;
+	
+	padding:10px;
+	
+}
+.user-main {
+   line-height:20px;
+   height:300px;
+	padding:3px;
+	float:left;
+   
+}
+.user-main .uI-left {
+	float:left;
+	width:300px;
+}
+.user-main .uI-right{
+   float:right;
+}
+.user-main .uI-left a{
+	float:left;
+	line-height:30px;
+	padding:10px;
+	width:250px;
+	text-align:center;
+	text-decoration:none;
+	background-color:#8f98b3;
+	color:#023440;
+}
+
+
+
+/*userInfo 界面的样式*/
+em,strong{
+    font-style: normal;/*字体样式*/
+    font-weight: normal;
+}
+ul{
+    list-style: none;
+}
+h1{
+    font-size: 55px;
+    margin-top: 30px;
+    color:white;
+    text-align:center;/*文本居中*/
+}
+ul{
+    list-style: none;
+}
+h1{
+    font-size: 55px;
+    margin-top: 30px;
+    color:white;
+    text-align:center;/*文本居中*/
+}
+
+.main-1{
+	background-color:#d0d2a4;
+}
+.main-1 .backbutton{
+	color:#eeeeee;
+	text-decoration:none;
+}
+.main-2{
+	width:100%;
+	background-color:#c0c0c0;
+}
+
+.main-2 ul{
+	width:100%;
+}
+.main-2 ul li{
+	float:left;
+	text-align:center;
+	width:30%;
+	line-height:45px;
+	color:#eeeeee;
+}
+.main-3{
+	width:100%;
+	background-color:#c0c0c0;
+   height:300px;
+   line-height:45px;
+   text-align:center;
+}
+.main-3 p {
+	width:100%;
+	overflow:hidden;
+}

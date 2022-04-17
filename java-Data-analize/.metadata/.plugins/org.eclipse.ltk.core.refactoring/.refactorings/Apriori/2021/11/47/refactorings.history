@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Apriori/top1000data&apos; to &apos;apriori&apos;" description="Rename resource &apos;top1000data&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="top1000data" name="apriori" stamp="1637413437073" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Apriori/apriori&apos; to &apos;aprioridata&apos;" description="Rename resource &apos;apriori&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="apriori" name="aprioridata" stamp="1637413448177" updateReferences="true"/>
+</session>

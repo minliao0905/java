@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Viewcontroll">
+   <children>
+      <Button fx:id="loginButton" layoutX="183.0" layoutY="268.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="147.0" text="登录" />
+      <Label layoutX="108.0" layoutY="73.0" prefHeight="30.0" prefWidth="65.0" text=" 账号：" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="137.0" prefHeight="36.0" prefWidth="84.0" text=" 密码：" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameField" layoutX="173.0" layoutY="79.0" />
+      <TextField fx:id="passwordfield" layoutX="173.0" layoutY="140.0" />
+   </children>
+</AnchorPane>

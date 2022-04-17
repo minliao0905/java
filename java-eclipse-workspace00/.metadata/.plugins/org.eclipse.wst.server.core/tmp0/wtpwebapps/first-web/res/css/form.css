@@ -1,0 +1,64 @@
+@charset "UTF-8";
+html{
+	height:100%;
+}
+.local-form {
+	width: 100%;
+	float: right;
+	height:100%;
+	margin-left: 100px;
+	
+}
+
+.local-form form {
+	background-color:white;
+	width: 350px;
+	float:right;
+	height: 120%;
+	border: 5px solid black;
+	margin-right:50px;
+	margin-top:50px;
+	margin-right: 100px;
+	border-radius:10px;
+}
+.local-form form ul{
+ list-style:none;
+}
+.local-form  ul li{
+border-bottom:1px solid black;
+width:200px;
+list-style:none;
+
+}
+.local-form ul li .model select{
+	height:45px;
+}
+
+.local-form  input {
+	line-height: 30px;
+	border: 1px solid black;
+	margin-bottom: 5px;
+}
+.local-form button{
+background-color:grey;
+width:100px;
+border-radius:15px;
+height:30px;
+margin-left:30px;
+}
+.local-form .mybutton2{
+background-color:grey;
+width:150px;
+border-radius:15px;
+height:30px;
+color:black;
+text-decoration:none;
+}
+.local-form .mybutton2 a{
+background-color:grey;
+width:100%;
+border-radius:15px;
+height:30px;
+color:black;
+text-decoration:none;
+}

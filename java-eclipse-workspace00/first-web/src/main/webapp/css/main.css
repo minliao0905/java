@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.main-1{
+	margin-left:50px;
+	
+}
+.main-1 .nav-item{
+	float:left;
+	position:aboslute;
+	display:block;
+	padding-left:0px;
+}
+img{
+	margin:10px 5px;
+}
+.main-2{
+	margin-left:100px;
+	border:black
+}
+.main-2 .floor-item{
+	float:left;
+}
+
+.main-2 .floor_title image{
+	width:100%;
+}
+
+ .floor_title {
+  padding: 10rpx;
+}
+.floor_item {
+  overflow: hidden;
+}
+ .floor_title image {
+  height: 100%;
+  width: 100%;
+}
+ .floor_item  {
+  float: left;
+  height:180px;
+  margin-left:10px;
+}
+ .floor_item navigator:nth-last-child(-n+4) {
+  /*原图232*386*/
+  height: 27.72711207vw;
+  border-left: 10rpx solid #ffffff;
+}
+.floor_item navigator:nth-child(2),
+.floor_item navigator:nth-child(3) {
+  border-bottom: 10rpx solid #ffffff;
+}

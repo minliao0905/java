@@ -1,0 +1,11 @@
+<classpath>
+  <container id="first-web!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/java-eclipse-workspace00/first-web/src/main/webapp/WEB-INF/lib/servlet-api.jar">
+      <source-attachment-path>D:/java-eclipse-workspace00/first-web/src/main/webapp/WEB-INF/lib/servlet-api.jar</source-attachment-path>
+      <attribute name="annotationpath">/first-web/src/main/webapp/WEB-INF/lib/servlet-api.jar</attribute>
+    </entry>
+    <entry id="D:/java-eclipse-workspace00/first-web/src/main/webapp/WEB-INF/lib/jstl-1.2.jar">
+      <source-attachment-path>D:/java-eclipse-workspace00/first-web/src/main/webapp/WEB-INF/lib/servlet-api.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

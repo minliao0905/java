@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.educoder.dao.UserDao"/>
+    <fullyQualifiedTypeName name="com.educoder.dao.Impl.UserDaoImpl"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+    <fullyQualifiedTypeName name="com.educoder.entity.Address"/>
+    <fullyQualifiedTypeName name="com.educoder.service.AddressService"/>
+    <fullyQualifiedTypeName name="com.educoder.service.OrderService"/>
+    <fullyQualifiedTypeName name="dao.BaseDao"/>
+    <fullyQualifiedTypeName name="dao.userdao"/>
+    <fullyQualifiedTypeName name="entity.User"/>
+    <fullyQualifiedTypeName name="com.educoder.entity.shops"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="com.educoder.dao.Impl.OrderDaoImpl"/>
+    <fullyQualifiedTypeName name="com.educoder.dao.OrderDao"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="com.educoder.entity.Order"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.educoder.dao.Impl.ShopsDaoImpl"/>
+    <fullyQualifiedTypeName name="com.educoder.dao.ShopsDao"/>
+    <fullyQualifiedTypeName name="com.educoder.entity.Shops"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.educoder.dao.Impl.MycontrolDaoImpl"/>
+    <fullyQualifiedTypeName name="com.educoder.dao.MycontrolDao"/>
+    <fullyQualifiedTypeName name="com.educoder.entity.Goods"/>
+    <fullyQualifiedTypeName name="com.educoder.entity.User"/>
+    <fullyQualifiedTypeName name="com.educoder.entity.Mycontrol"/>
+    <fullyQualifiedTypeName name="com.educoder.dao.Impl.GoodsDaoImpl"/>
+    <fullyQualifiedTypeName name="com.educoder.dao.GoodsDao"/>
+</qualifiedTypeNameHistroy>

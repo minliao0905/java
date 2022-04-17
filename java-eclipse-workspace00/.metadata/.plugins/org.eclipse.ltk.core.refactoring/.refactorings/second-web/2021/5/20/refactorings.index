@@ -1,0 +1,18 @@
+1620701652529	Move 'dao' to 'java'
+1620702070601	Rename resource 'iml'
+1620702235641	Move 'entity' to 'java'
+1620710479808	Move 'jsf-api.jar' to 'lib'
+1620710481939	Move 'jstl-1.2.jar' to 'lib'
+1620710484975	Move 'mysql-connector-java-5.1.26-bin.jar' to 'lib'
+1620710487043	Move 'mysql-connector-java-5.1.49.jar' to 'lib'
+1620710493569	Delete element
+1620729053775	Move 'jquery.min.js' to 'lib'
+1620729070613	Delete element
+1620781527069	Copy folder
+1620892715212	Move 'GuessNumber.java' to 'entity'
+1620892721172	Move '7' to 'webapp'
+1620892734395	Move 'lib' to 'webapp'
+1620892922304	Move '8' to '6'
+1620892925519	Move '8' to 'webapp'
+1620893160407	Rename resource 'ThreeParames_8.java'
+1620893303514	Delete element

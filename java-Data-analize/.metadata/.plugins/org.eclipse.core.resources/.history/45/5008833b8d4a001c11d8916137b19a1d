@@ -1,0 +1,140 @@
+package demo5;
+
+/********************************************************************************
+ *
+ * 
+ * 数据挖掘实验，分类实验
+ * 朴素贝叶斯分类
+ *
+ *训练样本示例格式：（R,1,5,5,4）
+ */
+ 
+import java.io.File;
+import java.util.Scanner;
+import java.util.Vector;
+ 
+public class Bayes {
+    static Vector<String> indata = new Vector<>();//读入数据
+    static Vector<String[]> catagory_Y = new Vector<>();//存储类别R的所有数据
+    static Vector<String[]> catagory_N = new Vector<>();//存储类别L的所有数据
+
+    public static boolean loadData(String url) {//加载测试的数据文件
+        try {
+            Scanner in = new Scanner(new File(url));//读入文件
+            while (in.hasNextLine()) {
+                String str = in.nextLine();//将文件的每一行存到str的临时变量中
+                indata.add(str);           //将每一个样本点的数据追加到Vector 中
+            }
+            return true;
+        } catch (Exception e) { //如果出错返回false
+            return false;
+        }
+    }
+    
+    
+    //数据预处理，将原始数据中的每一个属性值提取出来存放到Vector<double[]>  data中
+    public static void pretreatment(Vector<String> indata) {  
+        int i = 1;
+        String t;
+        while (i < indata.size()) {    //取出indata中的每一行值
+            String[] item = new  String[7];
+            t = indata.get(i);
+            String[] sourceStrArray = t.split(",", 7);//使用字符串分割函数提取出各属性值
+//            System.out.println(sourceStrArray[6]+i);
+            switch (sourceStrArray[6]) {
+                case "是": {
+                    for (int j = 0; j < 7; j++) {
+                        item[j] = sourceStrArray[j];
+                    }
+                    catagory_N.add(item);
+                    break;
+                }
+                case "否": {
+                    for (int j = 0; j < 7; j++) {
+                        item[j] = sourceStrArray[j];
+                    }
+                    catagory_Y.add(item);
+                    break;
+                }
+                default :
+                	break;
+            }
+            i++;
+        }
+    }
+ 
+    public static double bayes(String[] x, Vector<String[]> catagory) {
+    	int n = x.length;
+        double[] ai_y = new double[n];
+        double ai_all = 1;
+        
+        int[] sum_ai = new int[n];
+        for (int i = 0; i <n-1; i++) {
+            for (int j = 0; j < catagory.size(); j++) {      	
+                if (x[i].equals(catagory.get(j)[i]))
+                { 
+                	 sum_ai[i]++; 
+                }
+              
+            }  System.out.print(x[i]+"个数为："+sum_ai[i]);    
+        }
+        
+        for (int i = 0; i < n; i++) {
+            ai_y[i] = (double) sum_ai[i] / (double) catagory.size();
+         
+            ai_all = ai_all*ai_y[i];
+        }
+        return ai_all;
+    }
+ 
+    public static void main(String[] args) {
+ 
+        loadData("watemalenData");
+        pretreatment(indata);
+        double p_yN = (double) catagory_Y.size() / (double) (indata.size());//表示概率p（R）
+        double p_yY = (double) catagory_N.size() / (double) (indata.size());//表示概率p（B）
+        System.out.println("不是好瓜的概率："+ String.format("%.2f", p_yN));     
+        System.out.println("是好瓜的概率："+ String.format("%.2f", p_yY));
+
+        String[] x = new String[7];
+        double x_in_Y, x_in_N;
+
+        int sumY=0, sumN=0;
+        double correct=0;
+        int r = 1;
+        //判断每行数据
+        while (r < indata.size()) {
+            for (int i = 0; i < 6; i++)
+            {  x[i] = indata.get(r).split(",", 7)[i]; System.out.print(x[i]+"  ");}
+            //求出是好瓜的概率和不是好瓜的概率
+           System.out.println();
+            x_in_Y = bayes(x, catagory_Y) * p_yY;
+            x_in_N = bayes(x, catagory_N) * p_yN;
+            System.out.println("第"+r+"个数据是好瓜的概率为："+x_in_Y+"   不是好瓜的概率为："+x_in_N);
+ //判断概率谁大谁小
+            if (x_in_Y == Math.max(x_in_Y, x_in_N)) {
+//                System.out.println("输入的第"+r+"样本属于类别：B");
+                sumY++;
+                if(indata.get(r).split(",",7)[0].equals("是"))
+                    correct++;
+            } else if (x_in_N == Math.max(x_in_Y,x_in_N)) {
+//                System.out.println("输入的第"+r+"样本属于类别：L");
+                sumN++;
+                if(indata.get(r).split(",",7)[0].equals("否"))
+                    correct++;
+            }
+            r++;
+        }
+ 
+        System.out.println("使用训练样本进行分类器检验得到结果统计如下：");
+        System.out.println("N类有："+sumN+"    实际有R类样本"+catagory_N.size()+"个");
+        System.out.println("Y类有："+sumY+"    实际有L类样本"+catagory_Y.size()+"个");
+     
+ 
+        System.out.println("分类的正确率为"+correct*1.0/indata.size()*100+"%");
+ 
+    }
+}
+ 
+ 
+ 
